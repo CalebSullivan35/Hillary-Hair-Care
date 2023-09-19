@@ -1,13 +1,34 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ margin: 0;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.appointmentContainer {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 16px; /* Adjust the gap as needed */
+ margin-left: 30px;
+ margin-right: 30px;
+}
+
+.appoinmentCard {
+ margin: 20px;
+}
+
+#createAppointmentContainer {
+ margin: 20px;
+}
+
+#appointmentCardButtonContainer {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ margin-top: 10px;
 }
